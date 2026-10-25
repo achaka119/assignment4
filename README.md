@@ -1,58 +1,66 @@
-# assignment4
+# assignment5
 ## Name: Askar Kairatbek  
 ## Group: IT-2501
 
-## Part 1 - basic html forms
-### task 0:
-The contact form has Name, Email, Message, and a Submit button.
-Each field has a label.
 
-### Task 1: HTML Validation
+## task 1
+I created a const object called userProfile with four properties:
 
-I used `required` to make fields mandatory.
-The email field uses `type="email"` to check the email format.
-Length limits control the number of characters.
+- name — a string.
+- birthYear — a number.
+- isDeveloper — a boolean.
+- hobbies — an array.
 
-![screenshots](part1.png)
+![Task 1: Profile object](task_1.png)
 
-## Part 2 - bootsrap forms
+## task 2
+The program calculates the user's age by subtracting the birth year
+from the current year.
+It also counts hobbies using the array's length property.
+Both values appear on the page and in the console.
+The age calculation uses only the birth year, not the exact birthday.
 
-### task 2: Bootstrap form styling
-I used Bootstrap to style the fields and buttons.
-I used `row` and `col` classes to arrange the fields.
-The layout changes depending on the screen size.
+![Task 2: Age and hobby count](task_2.png)
 
-## Task 3: Validation Feedback
+## task 3
+The form contains:
+- A Username input.
+- A Birth Year input.
+- An "I am a developer" checkbox.
+- A "Create / Update Profile" button.
 
-The form shows error messages for invalid information.
-It shows “Looks good!” for valid information.
+![Task 3: Profile form](task_3.png)
 
-![screenshots](part2.png)
+## task 4
+The form uses a submit event listener.
+When the user submits the form, the program:
 
-## Part 3 - Advanced form Project
+1. Prevents the page from reloading with preventDefault()
+2. Reads the input values
+3. Updates the userProfile object
+4. Displays the updated profile
 
-### Task 4: Registration form
-My registration form includes:
-- First Name and Last Name
-- Email
-- Password and Confirm Password
-- Gender radio buttons
-- Hobbies checkboxes
-- Country dropdown
-- Submit and Reset buttons
+![Task 4: Updated profile](task_4.png)
 
-Passwords must contain at least 8 characters. Radio buttons allow one choice. Checkboxes allow multiple choices.
-Reset returns the fields to their initial values.
+## Task 5: Creating and Removing Elements
 
-My form uses HTML validation and Bootstrap styling. It does not check whether the two passwords match.
-It does not create a real account.
+Hobbies appear in an unordered list.
 
-![screenshots](part3.png)
+The "Add Item" button adds a hobby to the array.
+The program uses createElement() and appendChild() to display list items
+The "Remove Item" button removes the last hobby using pop()
+The list and hobby count update after each change
 
-## Work Summary
+Empty hobbies are not added, and removing from an empty list does not cause an error.
 
-I created the fields with HTML and styled them with Bootstrap. And I added validation rules and feedback messages. 
-I learned how to use different form controls and the Bootstrap grid.
+![Task 5: Hobbies list](task_5.png)
 
+## Work Process Summary
+
+So, I created the HTML form and added CSS styles.
+Then I created the profile object and age calculation.
+Finally, I added event listeners for updating the profile and managing the hobbies list.
+
+![summary](task_6.png)
 
 https://achaka119.github.io/assignment4/
